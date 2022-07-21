@@ -1,0 +1,21 @@
+/* =============== VARIABLES =============== */
+$dark-blue: #23167C;
+$dark-green: #5CBEC1;
+$light-green: #3EE2B5;
+$light-blue: #7F95CE;
+$purple: #AC61DF;
+
+/* =============== IMPORTS =============== */
+@use './components/Home/Home';
+@use './components/Header/Header';
+@use './components/Navbar/Navbar';
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* =============== STYLES =============== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
