@@ -31,7 +31,7 @@ header {
         color: #fff;
         font-weight: 500;
 
-        span:first-child::after {
+        span.dot::after {
             content: '.';
             color: $light-green;
         }
@@ -43,7 +43,8 @@ header {
         flex-direction: column;
         align-items: center;
         width: 90%;
-        gap: 1rem; 
+        gap: 1rem;
+        padding-top: 6rem;
 
         p {
             text-align: center;
@@ -56,7 +57,7 @@ header {
 
         a {
             background: $light-green;
-            padding: 0.3rem 2.6rem;
+            padding: 0.3rem 2.6rem 0.2rem;
             text-decoration: none;
             border-radius: 5px;
             color: $dark-blue;
@@ -73,5 +74,44 @@ header {
         display: flex;
         align-items: flex-end;
         justify-content: center;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    header {
+        .title-parag-btn {
+            width: 70%;
+        }
+
+        .title-parag-btn {
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        .title-parag-btn {
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    header {
+        flex-direction: row;
+        padding-top: 4rem;
+        justify-content: center;
+
+        .title-parag-btn {
+            padding: unset;
+            width: 40%;
+        }
+
+        .background-image {
+            width: 40%;
+            height: 100vh;
+        }
     }
 }

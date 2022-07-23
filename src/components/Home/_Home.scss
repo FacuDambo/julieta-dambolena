@@ -12,13 +12,25 @@ $purple: #AC61DF;
     align-items: center;
     min-height: 100vh;
 
-    .first-section {
-        height: 50vh;
+    .first-section, 
+    .second-section, 
+    .third-section, 
+    .fourth-section,
+    .fifth-section {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         justify-content: center;
+        flex: 1;
+        padding: 4rem 0;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    .first-section {
         gap: 1.5rem;
         width: 80%;
 
@@ -29,9 +41,7 @@ $purple: #AC61DF;
 
             h3 {
                 color: $dark-blue;
-                font-size: 1.6rem;
-                font-weight: 500;
-    
+
                 &::after {
                     content: '.';
                     color: $light-green;
@@ -54,15 +64,10 @@ $purple: #AC61DF;
     .second-section {
         background-color: $dark-green;
         width: 100%;
-        height: 50vh;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         color: white;
 
         h3 {
-            font-size: 1.6rem;
             margin-bottom: 1.5rem;
         }
 
@@ -70,7 +75,6 @@ $purple: #AC61DF;
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
             width: 80%;
             gap: 1.5rem;
 
@@ -85,6 +89,132 @@ $purple: #AC61DF;
 
                 p {
                     font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .third-section {
+        gap: 2rem;
+        width: 80%;
+
+        h3 {
+            margin-bottom: 1rem;
+            color: $dark-blue;
+
+            &::after {
+                content: '.';
+                color: $light-green;
+            }
+        }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem 0;
+
+            .expertise {
+                width: 50%;
+                text-align: center;
+                font-size: 1.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                font-weight: 500;
+                background: -webkit-linear-gradient(245deg, $light-blue, $dark-blue);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    .fourth-section {
+        background-color: $light-blue;
+        color: #fff;
+
+        div {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            q {
+                font-style: italic;
+                line-height: 1rem;
+            }
+        }
+    }
+
+    .fifth-section {
+        gap: 0.5rem;
+
+        h3 {
+            color: $dark-blue;
+        }
+
+        a {
+            margin-top: 1rem;
+            text-decoration: none;
+            background: $purple;
+            color: #fff;
+            padding: 0.5rem 1.7rem 0.3rem;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 600px){
+    .main-container {
+        .first-section, .third-section {
+            width: 60%;
+        }
+
+        .second-section, .fourth-section {
+            div {
+                width: 60%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    :root {
+        font-size: 18px;
+    }
+
+    .main-container {
+        .second-section {
+            h3 {
+                width: 100%;
+            }
+
+            > div {
+                flex-direction: row;
+                width: 90%;
+                gap: 1rem 1.5rem;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                div {
+                    width: 30%;
+                    gap: 0.5rem;
+
+                    h4 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .third-section {
+            div {
+                .expertise {
+                    width: 25%;
                 }
             }
         }

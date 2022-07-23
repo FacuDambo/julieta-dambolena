@@ -1,0 +1,141 @@
+/* =============== VARIABLES =============== */
+$dark-blue: #23167C;
+$dark-green: #5CBEC1;
+$light-green: #3EE2B5;
+$light-blue: #7F95CE;
+$purple: #AC61DF;
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #23167C;
+    height: 400px;
+    color: #fff;
+
+    .logo-parag {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            width: 70%;
+        }
+
+        p {
+            width: 80%;
+            text-align: center;
+        }
+    }
+
+    .mail-inputs {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 0.5rem;
+
+        span {
+            font-size: 1.5rem;
+
+            &::after {
+                content: '.';
+                color: $light-green;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-bottom: 2px;
+            }
+
+            input {
+                margin-bottom: 8px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                    margin-top: 5px;
+                    width: 50%;
+                    align-self: center;
+                    background: #AC61DF;
+                    color: #fff;
+                    border-radius: 5px;
+                    border: unset;
+                    padding: 0.5rem 1.7rem 0.3rem;
+                }
+            }
+        }
+    }
+}
+
+/* =============== MEDIA QUERYS =============== */
+@media only screen and (min-width: 425px) {
+    footer {
+        .logo-parag {
+            img {
+                width: 50%;
+            }
+        }
+    } 
+}
+
+
+@media only screen and (min-width: 600px) {
+    footer {
+        .logo-parag {
+            img {
+                width: 40%;
+            }
+
+            p {
+                width: 60%;
+            }
+        }
+
+        .mail-inputs {
+            width: 60%;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: center;
+
+        .logo-parag {
+            width: 50%;
+            align-items: flex-start;
+
+            img {
+                width: 70%;
+            }
+
+            p {
+                text-align: unset;
+                width: 80%;
+            }
+        }
+
+        .mail-inputs {
+            width: 30%;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    footer {
+        .logo-parag {
+            img {
+                width: 50%;
+            }
+        }
+    }
+}
