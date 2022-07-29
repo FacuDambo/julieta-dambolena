@@ -9,7 +9,9 @@ const TypeEffect = () => {
     const timeOut = () => {
         setTimeout(() => {
             let text = document.querySelector("#text");
-            textInner = text.textContent
+            if (text) {
+                textInner = text.textContent
+            }
 
             if (textInner === "Translator" || textInner === "Content writer" || textInner === "Forward-thinker") {
                 setTextBool(true)
@@ -36,8 +38,6 @@ const TypeEffect = () => {
     }, []);
 
     timeOut()
-
-    console.log(textInner);
     return (
         <h1>
             <span ref={el} id='text' className={textBool ? 'dot' : 'no-dot'}></span>

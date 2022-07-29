@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../Header/Header'
-import TypeEffect from './TypeEffect'
 import { Link } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import Loader from '../Loader/Loader'
 import Slider from "react-slick";
 
-const Home = () => {
+const Portfolio = () => {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
@@ -31,54 +30,16 @@ const Home = () => {
         return (
             <main>
                 <Header 
-                title={<TypeEffect />}
-                parag={<p>I write and translate content for next-gen companies that are harnessing the power of <span>blockchain</span> and other emerging technologies.</p>} 
-                button="Let's work together"/>
-    
+                title={<h1 className='dot'>Your blog could look like this</h1>}
+                parag={<p>Here's a little taste of what I do. I can help you bring your blog to life and make the best of it. Let's populate it with insightful content --in English or Spanish!</p>} 
+                button="Let's do this!"/>
+
                 <section className='main-container'>
                     <div className='first-section'>
-                        <div>
-                            <h3>Your one-stop freelancer for all your Web3 content needs</h3>
-                            <span>IN ENGLISH AND SPANISH</span>
-                        </div>
-                        <p>I work with <span>Web3 companies</span> that are harnessing the power of blockchain, crypto, NFTs, the metaverse and other <span>emerging technologies</span> to bring innovative ideas to life. With domain-specific knowledge and a passion for tech and all things digital, I write and translate everything from blog posts and social media copy to white papers and roadmaps.</p>
+                        
                     </div>
-    
-                    <div className='second-section'>
-                        <div>
-                            <h3>This is how I make your life easier.</h3>
-                            <div className="life-easier">
-                                <h4>Translation & Localization</h4>
-                                <p>Culturally relevant translations to expand your reach.</p>
-                            </div>
-                            <div className="life-easier">
-                                <h4>Content writing</h4>
-                                <p>Engaging, one-of-a-kind content to build an audience and offer value.</p>
-                            </div>
-                            <div className="life-easier">
-                                <h4>Content planning</h4>
-                                <p>A fool-proof strategy to align your content across all channels.</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div className='third-section'>
-                        <h3>These are my areas of expertise</h3>
-                        <div>
-                            <span className="expertise">Blockchain</span>
-                            <span className="expertise">Crypto</span>
-                            <span className="expertise">NFTs</span>
-                            <span className="expertise">Metaverse</span>
-                            <span className="expertise">Web3</span>
-                            <span className="expertise">DeFi</span>
-                            <span className="expertise">GameFi</span>
-                            <span className="expertise">AI/ML</span>
-                            <span className="expertise">Tech</span>
-                            <span className="expertise">Digital</span>
-                        </div>
-                    </div>
-    
-                    <div className='fourth-section-carousel'>
+
+                    <div className='fourth-section-carousel light-green'>
                         <h3>And this is what my clients are saying...</h3>
 
                         <Slider {...settings}>
@@ -110,9 +71,9 @@ const Home = () => {
                     </div>
 
                     <div className='fifth-section'>
-                        <h3>How can I help?</h3>
-                        <p>I'd love to hear more about your project.</p>
-                        <Link to='/contacts'>CONTACT</Link>
+                        <h3>Ready to get to work?</h3>
+                        <p>I'd love to hear more about your project</p>
+                        <Link to='/contact' className='contact-btn'>CONTACT</Link>
                     </div>
                 </section>
                 
@@ -122,4 +83,4 @@ const Home = () => {
     }
 }
 
-export default Home
+export default Portfolio

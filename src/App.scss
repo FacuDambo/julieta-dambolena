@@ -6,6 +6,7 @@ $light-blue: #7F95CE;
 $purple: #AC61DF;
 
 /* =============== IMPORTS =============== */
+@use './components/Loader/Loader';
 @use './components/Home/Home';
 @use './components/Header/Header';
 @use './components/Navbar/Navbar';
@@ -19,4 +20,74 @@ $purple: #AC61DF;
     padding: 0;
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
+}
+
+.slick-slider {
+    width: 100%;
+
+    button[type="button"] {
+        display: none !important;
+    }
+
+    .slick-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > div {
+            width: 70%;
+            text-align: center;
+
+            div {
+                display: flex !important;
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    }
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+
+    .slick-dots {
+        bottom: -35px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5b6b94;
+
+    &:hover {
+        background: #5b6b94;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .slick-slider {
+        .slick-slide {
+            > div {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .slick-slider {
+        .slick-slide {
+            > div {
+                width: 50%;
+            }
+        }
+    }
 }

@@ -12,6 +12,19 @@ footer {
     justify-content: space-around;
     align-items: center;
     background-color: #23167C;
+    background-image: linear-gradient(
+    180deg,
+    hsl(248deg 70% 29%) 0%,
+    hsl(248deg 70% 27%) 31%,
+    hsl(248deg 71% 26%) 46%,
+    hsl(247deg 71% 25%) 56%,
+    hsl(247deg 72% 23%) 63%,
+    hsl(247deg 73% 21%) 70%,
+    hsl(247deg 74% 20%) 77%,
+    hsl(247deg 77% 18%) 84%,
+    hsl(247deg 81% 15%) 92%,
+    hsl(247deg 94% 12%) 100%
+    );
     height: 400px;
     color: #fff;
 
@@ -132,10 +145,41 @@ footer {
 
 @media only screen and (min-width: 1024px) {
     footer {
+        height: 300px;
+
         .logo-parag {
             img {
                 width: 50%;
             }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1366px) {
+    footer {
+        .logo-parag {
+            img {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    footer {
+        .logo-parag {
+            img {
+                width: 25%;
+            }
+
+            p {
+                width: 50%;
+            }
+        }
+
+        .mail-inputs {
+            width: 20%;
         }
     }
 }

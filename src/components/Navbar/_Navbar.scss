@@ -74,10 +74,6 @@ nav {
     }
 }
 
-.navigation-menu.nav-out {
-    animation: navAnimationOut 0.4s;
-}
-
 
 /* =============== KEYFRAMES =============== */
 
@@ -193,6 +189,12 @@ nav {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .navigation-menu.nav-out {
+        animation: navAnimationOut 0.4s;
+    }
+}
+
 
 @media only screen and (min-width: 1024px) {
     .navbar-expand {
@@ -231,5 +233,11 @@ nav {
 
     .navigation-menu {
         padding-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .navigation-menu {
+        gap: 1.5rem;
     }
 }

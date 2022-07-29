@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../Header/Header'
-import TypeEffect from './TypeEffect'
 import { Link } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import Loader from '../Loader/Loader'
 import Slider from "react-slick";
 
-const Home = () => {
+const Services = () => {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
@@ -31,55 +30,62 @@ const Home = () => {
         return (
             <main>
                 <Header 
-                title={<TypeEffect />}
-                parag={<p>I write and translate content for next-gen companies that are harnessing the power of <span>blockchain</span> and other emerging technologies.</p>} 
+                title={<h1 className='dot'>Here's how I can help</h1>}
+                parag={<p>My services are all meant to make your life easier and help your company expand its reach, drive more traffic, and boost brand awareness --at a regional and international level.</p>} 
                 button="Let's work together"/>
-    
+
                 <section className='main-container'>
-                    <div className='first-section'>
+                    <div className='first-section first-service'>
                         <div>
-                            <h3>Your one-stop freelancer for all your Web3 content needs</h3>
-                            <span>IN ENGLISH AND SPANISH</span>
+                            <aside>
+                                <h3>Translation & Localization</h3>
+                                <span>ENGLISH - SPANISH</span>
+                            </aside>
+                            <p>Bring global awareness to your brand and expand into new markects with culturally relevant translations.</p>
+                            <Link to='/contact' className='contact-btn'>I want to expand my reach</Link>
                         </div>
-                        <p>I work with <span>Web3 companies</span> that are harnessing the power of blockchain, crypto, NFTs, the metaverse and other <span>emerging technologies</span> to bring innovative ideas to life. With domain-specific knowledge and a passion for tech and all things digital, I write and translate everything from blog posts and social media copy to white papers and roadmaps.</p>
-                    </div>
-    
-                    <div className='second-section'>
+
                         <div>
-                            <h3>This is how I make your life easier.</h3>
-                            <div className="life-easier">
-                                <h4>Translation & Localization</h4>
-                                <p>Culturally relevant translations to expand your reach.</p>
-                            </div>
-                            <div className="life-easier">
-                                <h4>Content writing</h4>
-                                <p>Engaging, one-of-a-kind content to build an audience and offer value.</p>
-                            </div>
-                            <div className="life-easier">
-                                <h4>Content planning</h4>
-                                <p>A fool-proof strategy to align your content across all channels.</p>
-                            </div>
+                            <p>The lingo in the blockchain & crypto space is unique. Your translated content should reflect that. </p>
+                            <p>My translation process is designed to produce content that resonates with your community, and all translations are adapted not only to the target audience, but also to its cultural nuances. I follow SEO translation practices and offer international keyword research to make sure your translated content ranks as good as the original version.</p>
                         </div>
                     </div>
-    
-                    <div className='third-section'>
-                        <h3>These are my areas of expertise</h3>
+
+                    <div className='second-section second-service'>
                         <div>
-                            <span className="expertise">Blockchain</span>
-                            <span className="expertise">Crypto</span>
-                            <span className="expertise">NFTs</span>
-                            <span className="expertise">Metaverse</span>
-                            <span className="expertise">Web3</span>
-                            <span className="expertise">DeFi</span>
-                            <span className="expertise">GameFi</span>
-                            <span className="expertise">AI/ML</span>
-                            <span className="expertise">Tech</span>
-                            <span className="expertise">Digital</span>
+                            <div>
+                                <p>Your content represents your brand.</p>
+                                <p>Whether it's a blog post, social media copy or your project's white paper,  your content should reflect you tone of voice and be 100% tailored to your business. I draft all sorts of content with the target market and audience in mind, following on-page SEO best practices to help you find your way to the first page of Google.</p>
+                            </div>
+
+                            <div>
+                                <aside>
+                                    <h3>Content Writing</h3>
+                                    <span>ENGLISH - SPANISH</span>
+                                </aside>
+                                <p>Engaging, one-of-a-kind  content to build an audience and offer value while driving traffic to your channels.</p>
+                                <Link to='/contact' className='contact-btn'>I want to grow an audience</Link>
+                            </div>
                         </div>
                     </div>
-    
+
+                    <div className='third-section third-service'>
+                        <div>
+                            <aside>
+                                <h3>Content planning</h3>
+                            </aside>
+                            <p>A fool-proof strategy to align your content across all channels and make the best of each piece.</p>
+                            <Link to='/contact' className='contact-btn'>Help me plan my content</Link>
+                        </div>
+
+                        <div>
+                            <p>Don't let your busy schedule get in the way of your brand's content strategy.</p>
+                            <p>In this fast-paced digital world, it's hard for entrepreneurs, creators and marketing teams to stay on top of things and deliver good content constantly. I can help you plan your content monthly and align it across all channels, so that you don't need to worry about coming up with topics and ideas to share.</p>
+                        </div>
+                    </div>
+
                     <div className='fourth-section-carousel'>
-                        <h3>And this is what my clients are saying...</h3>
+                        <h3>Others have tried my services. This is what they are saying...</h3>
 
                         <Slider {...settings}>
                             <div>
@@ -110,9 +116,9 @@ const Home = () => {
                     </div>
 
                     <div className='fifth-section'>
-                        <h3>How can I help?</h3>
-                        <p>I'd love to hear more about your project.</p>
-                        <Link to='/contacts'>CONTACT</Link>
+                        <h3>Sounds good?</h3>
+                        <p>Let's get to work! How can I help?</p>
+                        <Link to='/contact' className='contact-btn'>CONTACT</Link>
                     </div>
                 </section>
                 
@@ -122,4 +128,4 @@ const Home = () => {
     }
 }
 
-export default Home
+export default Services
