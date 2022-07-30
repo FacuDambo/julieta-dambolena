@@ -5,11 +5,16 @@ import { Link } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import Loader from '../Loader/Loader'
 import Slider from "react-slick";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+
         setTimeout(() => {
             setLoading(false)
         }, 1200);
@@ -33,7 +38,8 @@ const Home = () => {
                 <Header 
                 title={<TypeEffect />}
                 parag={<p>I write and translate content for next-gen companies that are harnessing the power of <span>blockchain</span> and other emerging technologies.</p>} 
-                button="Let's work together"/>
+                button="Let's work together"
+                image="assets/img3.png"/>
     
                 <section className='main-container'>
                     <div className='first-section'>
@@ -46,16 +52,16 @@ const Home = () => {
     
                     <div className='second-section'>
                         <div>
-                            <h3>This is how I make your life easier.</h3>
-                            <div className="life-easier">
+                            <h3 data-aos="zoom-in" data-aos-delay="100">This is how I make your life easier.</h3>
+                            <div className="life-easier" data-aos="zoom-in-up" data-aos-delay="200">
                                 <h4>Translation & Localization</h4>
                                 <p>Culturally relevant translations to expand your reach.</p>
                             </div>
-                            <div className="life-easier">
+                            <div className="life-easier" data-aos="zoom-in-up" data-aos-delay="300">
                                 <h4>Content writing</h4>
                                 <p>Engaging, one-of-a-kind content to build an audience and offer value.</p>
                             </div>
-                            <div className="life-easier">
+                            <div className="life-easier" data-aos="zoom-in-up" data-aos-delay="400">
                                 <h4>Content planning</h4>
                                 <p>A fool-proof strategy to align your content across all channels.</p>
                             </div>
@@ -65,16 +71,16 @@ const Home = () => {
                     <div className='third-section'>
                         <h3>These are my areas of expertise</h3>
                         <div>
-                            <span className="expertise">Blockchain</span>
-                            <span className="expertise">Crypto</span>
-                            <span className="expertise">NFTs</span>
-                            <span className="expertise">Metaverse</span>
-                            <span className="expertise">Web3</span>
-                            <span className="expertise">DeFi</span>
-                            <span className="expertise">GameFi</span>
-                            <span className="expertise">AI/ML</span>
-                            <span className="expertise">Tech</span>
-                            <span className="expertise">Digital</span>
+                            <span className="expertise" data-aos="flip-left" data-aos-delay="100">Blockchain</span>
+                            <span className="expertise" data-aos="flip-left" data-aos-delay="200">Crypto</span>
+                            <span className="expertise" data-aos="flip-left" data-aos-delay="300">NFTs</span>
+                            <span className="expertise" data-aos="flip-left" data-aos-delay="400">Metaverse</span>
+                            <span className="expertise" data-aos="flip-left" data-aos-delay="500">Web3</span>
+                            <span className="expertise" data-aos="flip-left" data-aos-delay="600">DeFi</span>
+                            <span className="expertise" data-aos="flip-left" data-aos-delay="700">GameFi</span>
+                            <span className="expertise" data-aos="flip-left" data-aos-delay="800">AI/ML</span>
+                            <span className="expertise" data-aos="flip-left" data-aos-delay="900">Tech</span>
+                            <span className="expertise" data-aos="flip-left" data-aos-delay="1000">Digital</span>
                         </div>
                     </div>
     

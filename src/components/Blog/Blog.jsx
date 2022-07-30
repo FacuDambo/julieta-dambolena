@@ -44,7 +44,7 @@ const Blog = () => {
 
                     <div className='second-section'>
                         <div>
-                            <h3>Don't have time to work on your content yourself? Let me help!</h3>
+                            <h3>Don't have time to work on your content yourself? <br /> Let me help!</h3>
                             <div className="life-easier">
                                 <h4>Translation & Localization</h4>
                                 <p>Culturally relevant translations to expand your reach.</p>

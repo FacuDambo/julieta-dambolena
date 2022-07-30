@@ -32,7 +32,8 @@ const Portfolio = () => {
                 <Header 
                 title={<h1 className='dot'>Your blog could look like this</h1>}
                 parag={<p>Here's a little taste of what I do. I can help you bring your blog to life and make the best of it. Let's populate it with insightful content --in English or Spanish!</p>} 
-                button="Let's do this!"/>
+                button="Let's do this!"
+                image="assets/img2.png"/>
 
                 <section className='main-container'>
                     <div className='first-section'>

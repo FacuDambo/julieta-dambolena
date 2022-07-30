@@ -85,7 +85,7 @@ const Services = () => {
                     </div>
 
                     <div className='fourth-section-carousel'>
-                        <h3>Others have tried my services. This is what they are saying...</h3>
+                        <h3>Others have tried my services. <br /> This is what they are saying...</h3>
 
                         <Slider {...settings}>
                             <div>

@@ -254,6 +254,15 @@ $purple: #AC61DF;
 }
 
 
+@media only screen and (max-width: 320px) {
+    .main-container { 
+        .fourth-section-carousel {
+            height: 32rem;
+        }
+    }
+}
+
+
 @media only screen and (min-width: 600px){
     .main-container {
         .first-section, .third-section {

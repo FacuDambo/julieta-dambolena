@@ -10,7 +10,7 @@ const Header = (props) => {
         <Link to="/contact">{props.button}</Link>
       </div>
       <div className='background-image'>
-        <img src="" alt="" />
+        <img src={props.image} alt="Translator portrait" />
       </div>
     </header>
   )

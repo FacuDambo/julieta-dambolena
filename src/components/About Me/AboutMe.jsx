@@ -23,7 +23,8 @@ const AboutMe = () => {
                 <Header 
                 title={<h1 className='dot'>Hi! I'm Julieta</h1>}
                 parag={<p>Nice to meet you! I'm a freelance translator and content writer, and my goal is to help next-gen companies share their innovative ideas and projects with the world --in an engaging way and the language of their audience.</p>} 
-                button="Let's work together"/>
+                button="Let's work together"
+                image="assets/img1.png"/>
     
                 <section className='main-container'>
                     <div className='first-section'>
