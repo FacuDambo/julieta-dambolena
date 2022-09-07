@@ -1,0 +1,117 @@
+/* =============== VARIABLES =============== */
+$dark-blue: #23167C;
+$dark-green: #5CBEC1;
+$light-green: #3EE2B5;
+$light-blue: #7F95CE;
+$purple: #AC61DF;
+
+.question {
+    &::after {
+        content: '?';
+        color: $light-green;
+    }
+}
+
+.contact {
+    min-height: 70vh;
+}
+
+.first-section form {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+
+    input,
+    textarea {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border: unset;
+        outline: none;
+        background: #7f95ce2b;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+
+
+        &:focus~span,
+        &:valid~span {
+            transform: translateX(-13px) translateY(-40px);
+            font-size: 1em;
+            color: $dark-blue;
+            font-weight: 600;
+        }
+    }
+
+    span {
+        position: absolute;
+        top: 12px;
+        left: 20px;
+        font-size: 1em;
+        transition: 0.3s;
+        color: $dark-blue;
+        font-weight: 600;
+    }
+}
+
+/* From uiverse.io by @adamgiebl */
+.cssbuttons-io-button {
+    background: $dark-blue;
+    color: #fff;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em $dark-blue;
+    overflow: hidden;
+    position: relative;
+    height: 2.1em;
+    padding-right: 3.3em;
+    cursor: pointer;
+    top: 0.8rem;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2em;
+    border-radius: 5px;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em $dark-blue;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: $dark-blue;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}

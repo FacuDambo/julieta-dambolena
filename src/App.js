@@ -6,6 +6,8 @@ import AboutMe from './components/About Me/AboutMe';
 import Services from './components/Services/Services';
 import Blog from "./components/Blog/Blog";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Contact from "./components/Contact/Contact";
+import Admin from "./components/Admin/Admin";
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
                         <Route path="/services" element={<Services />} />
                         <Route path="/portfolio" element={<Portfolio />} />
                         <Route path="/blog" element={<Blog />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/admin" element={<Admin />} />
                     </Routes>
             </Router>
         </div>

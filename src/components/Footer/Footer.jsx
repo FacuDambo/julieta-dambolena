@@ -5,19 +5,35 @@ const Footer = () => {
         <footer>
             <div className='logo-parag'>
                 <img src="assets/white-logo.png" alt="logo" />
-                <p>I'm a translator and content writer helping next-gen companies share their vission and ideas in the blockchain, crypto, NFT, and Web3 space.</p>
+                <p>I'm a translator and content writer helping next-gen companies share their vision and ideas in the blockchain, crypto, NFT, and Web3 space.</p>
             </div>
 
-            <div className='mail-inputs'>
+            <div className='socials'>
                 <span>Let's be friends</span>
-
-                <form>
-                    <label htmlFor="full-name">Full Name</label>
-                    <input type="text" name="full-name" id="full-name" />
-                    <label htmlFor="email">Email</label>
-                    <input type="text" name="email" id="email" />
-                    <input type="submit" value="Send" />
-                </form>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/julieta-dambolena/">
+                                <img src="assets/linkedin.svg" alt="linkedin logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@julietadambolena">
+                                <img src="assets/medium.svg" alt="medium logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/JuliDambolena">
+                                <img src="assets/twitter.svg" alt="twitter logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:hello@julietadambolena.com">
+                                <img src="assets/gmail.svg" alt="twitter logo" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </footer>
     )

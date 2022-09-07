@@ -9,7 +9,7 @@ $purple: #AC61DF;
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #23167C;
     background-image: linear-gradient(
@@ -44,10 +44,10 @@ footer {
         }
     }
 
-    .mail-inputs {
+    .socials {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        align-items: center;
         gap: 0.5rem;
 
         span {
@@ -59,27 +59,28 @@ footer {
             }
         }
 
-        form {
+        div {
             display: flex;
-            flex-direction: column;
+            gap: 10px;
+            align-items: center;
 
-            label {
-                margin-bottom: 2px;
-            }
+            ul {
+                display: flex;
+                gap: 10px;
 
-            input {
-                margin-bottom: 8px;
+                li {
+                    list-style: none;
 
-                &:last-child {
-                    margin-bottom: 0px;
-                    margin-top: 5px;
-                    width: 50%;
-                    align-self: center;
-                    background: #AC61DF;
-                    color: #fff;
-                    border-radius: 5px;
-                    border: unset;
-                    padding: 0.5rem 1.7rem 0.3rem;
+                    a {
+                        img {
+                            width: 2rem;
+                            filter: invert(1);
+
+                            &:hover {
+                                filter: invert(68%) sepia(4%) saturate(5420%) hue-rotate(191deg) brightness(89%) contrast(78%);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -109,10 +110,6 @@ footer {
                 width: 60%;
             }
         }
-
-        .mail-inputs {
-            width: 60%;
-        }
     }
 }
 
@@ -134,10 +131,6 @@ footer {
                 text-align: unset;
                 width: 80%;
             }
-        }
-
-        .mail-inputs {
-            width: 30%;
         }
     }
 }
@@ -176,10 +169,6 @@ footer {
             p {
                 width: 50%;
             }
-        }
-
-        .mail-inputs {
-            width: 20%;
         }
     }
 }

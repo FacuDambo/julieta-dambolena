@@ -35,7 +35,6 @@ export const Navbar = () => {
                 <NavLink to="/about-me" onClick={() => {toggleNav()}}>ABOUT ME</NavLink>
                 <NavLink to="/portfolio" onClick={() => {toggleNav()}}>PORTFOLIO</NavLink>
                 <NavLink to="/services" onClick={() => {toggleNav()}}>SERVICES</NavLink>
-                <NavLink to="/blog" onClick={() => {toggleNav()}}>BLOG</NavLink>
                 <NavLink to="/contact" onClick={() => {toggleNav()}}>CONTACT</NavLink>
             </div>
         </nav>
