@@ -14,7 +14,7 @@ const Header = (props) => {
       <div className='title-parag-btn'>
         {props.title}
         {props.parag}
-        <Link to="/contact" data-aos="zoom-in" data-aos-delay="300">{props.button}</Link>
+        <Link to="/contact" data-aos="zoom-in" data-aos-delay="300"><span>{props.button}</span></Link>
       </div>
       <div className='background-image'>
         <img data-aos="fade-up" data-aos-delay="600" src={props.image} alt="Translator portrait" />

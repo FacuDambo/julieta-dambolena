@@ -118,7 +118,7 @@ const Home = () => {
                     <div className='fifth-section'>
                         <h3 data-aos="zoom-in" data-aos-delay="50">How can I help?</h3>
                         <p data-aos="zoom-out-up" data-aos-delay="100">I'd love to hear more about your project.</p>
-                        <Link to='/contact' data-aos="zoom-in" data-aos-delay="200">CONTACT</Link>
+                        <Link to='/contact' data-aos="zoom-in" data-aos-delay="200"><span>CONTACT</span></Link>
                     </div>
                 </section>
                 

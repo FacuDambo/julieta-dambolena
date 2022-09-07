@@ -75,6 +75,7 @@ footer {
                         img {
                             width: 2rem;
                             filter: invert(1);
+                            transition: 0.4s linear;
 
                             &:hover {
                                 filter: invert(68%) sepia(4%) saturate(5420%) hue-rotate(191deg) brightness(89%) contrast(78%);

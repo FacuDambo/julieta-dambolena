@@ -44,7 +44,7 @@ const AboutMe = () => {
                     <div className='second-section'>
                         <div>
                             <p data-aos="fade-right" data-aos-delay="100">So, I switched gears and started taking more and more projects related to tech. I soon realized how exciting and full of possibilities this industry is and I started to learn and study and read. At one point, I had gained so much domain-specific knowledge that I just knew I had found my niche. Or it had found me.</p>
-                            <p data-aos="fade-left" data-aos-delay="100">And on this niche-discovering journey, I realized there's a massive lack of writers and translators specializing in emerging technologies, such as blockchain, crypto, NFTs, the metaverse and Web3.</p>
+                            <p data-aos="fade-right" data-aos-delay="100">And on this niche-discovering journey, I realized there's a massive lack of writers and translators specializing in emerging technologies, such as blockchain, crypto, NFTs, the metaverse and Web3.</p>
                         </div>
                     </div>
     
@@ -54,14 +54,14 @@ const AboutMe = () => {
     
                     <div className='fourth-section'>
                         <div>
-                            <p data-aos="zoom-in-left" data-aos-delay="200">So, now I partner with companies in the field to help them find their voice and share their innovative tech projects in a way that resonates with their target audience -- in their language.</p>
+                            <p data-aos="zoom-in-right" data-aos-delay="200">So, now I partner with companies in the field to help them find their voice and share their innovative tech projects in a way that resonates with their target audience -- in their language.</p>
                         </div>
                     </div>
     
                     <div className='fifth-section'>
-                        <h3 data-aos="zoom-in-left" data-aos-delay="200">Now it's your turn</h3>
+                        <h3 data-aos="zoom-in-right" data-aos-delay="200">Now it's your turn</h3>
                         <p data-aos="zoom-in-right" data-aos-delay="300">Tell me a bit about your project, and let's get to work!</p>
-                        <Link to='/contact' data-aos="zoom-out" data-aos-delay="400">CONTACT</Link>
+                        <Link to='/contact' data-aos="zoom-out" data-aos-delay="400"><span>CONTACT</span></Link>
                     </div>
                 </section>
                 

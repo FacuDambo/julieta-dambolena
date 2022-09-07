@@ -37,7 +37,7 @@ const Blog = () => {
                     <div className='fifth-section'>
                         <h3>Ready to get started?</h3>
                         <p>I'd love to hear more about your project</p>
-                        <Link to='/contact' className='contact-btn'>CONTACT</Link>
+                        <Link to='/contact' className='contact-btn'><span>CONTACT</span></Link>
                     </div>
                 </section>
                 

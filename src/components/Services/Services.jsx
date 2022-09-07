@@ -44,15 +44,15 @@ const Services = () => {
                         <div>
                             <aside>
                                 <h3 data-aos="zoom-in-right" data-aos-delay="200">Translation & Localization</h3>
-                                <span data-aos="zoom-in-right" data-aos-delay="300">ENGLISH - SPANISH</span>
+                                <span data-aos="zoom-in-right" data-aos-delay="300" className='eng-spa'>ENGLISH - SPANISH</span>
                             </aside>
                             <p data-aos="zoom-in-right" data-aos-delay="400">Bring global awareness to your brand and expand into new markects with culturally relevant translations.</p>
-                            <Link to='/contact' className='contact-btn' data-aos="zoom-in-right" data-aos-delay="500">I want to expand my reach</Link>
+                            <Link to='/contact' className='contact-btn' data-aos="zoom-in-right" data-aos-delay="500"><span>I want to expand my reach</span></Link>
                         </div>
 
                         <div>
-                            <p data-aos="zoom-in-left" data-aos-delay="600">The lingo in the blockchain & crypto space is unique. Your translated content should reflect that. </p>
-                            <p data-aos="zoom-in-left" data-aos-delay="700">My translation process is designed to produce content that resonates with your community, and all translations are adapted not only to the target audience, but also to its cultural nuances. I follow SEO translation practices and offer international keyword research to make sure your translated content ranks as good as the original version.</p>
+                            <p data-aos="zoom-in-right" data-aos-delay="600">The lingo in the blockchain & crypto space is unique. Your translated content should reflect that. </p>
+                            <p data-aos="zoom-in-right" data-aos-delay="700">My translation process is designed to produce content that resonates with your community, and all translations are adapted not only to the target audience, but also to its cultural nuances. I follow SEO translation practices and offer international keyword research to make sure your translated content ranks as good as the original version.</p>
                         </div>
                     </div>
 
@@ -65,11 +65,11 @@ const Services = () => {
 
                             <div>
                                 <aside>
-                                    <h3 data-aos="zoom-in-left" data-aos-delay="200">Content Writing</h3>
-                                    <span data-aos="zoom-in-left" data-aos-delay="300">ENGLISH - SPANISH</span>
+                                    <h3 data-aos="zoom-in-right" data-aos-delay="200">Content Writing</h3>
+                                    <span data-aos="zoom-in-right" data-aos-delay="300">ENGLISH - SPANISH</span>
                                 </aside>
-                                <p data-aos="zoom-in-left" data-aos-delay="400">Engaging, one-of-a-kind  content to build an audience and offer value while driving traffic to your channels.</p>
-                                <Link to='/contact' className='contact-btn' data-aos="zoom-in-left" data-aos-delay="500">I want to grow an audience</Link>
+                                <p data-aos="zoom-in-right" data-aos-delay="400">Engaging, one-of-a-kind  content to build an audience and offer value while driving traffic to your channels.</p>
+                                <Link to='/contact' className='contact-btn' data-aos="zoom-in-right" data-aos-delay="500"><span>I want to grow an audience</span></Link>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ const Services = () => {
                                 <h3 data-aos="zoom-in-right" data-aos-delay="200">Content planning</h3>
                             </aside>
                             <p data-aos="zoom-in-right" data-aos-delay="300">A fool-proof strategy to align your content across all channels and make the best of each piece.</p>
-                            <Link to='/contact' className='contact-btn' data-aos="zoom-in-right" data-aos-delay="400">Help me plan my content</Link>
+                            <Link to='/contact' className='contact-btn' data-aos="zoom-in-right" data-aos-delay="400"><span>Help me plan my content</span></Link>
                         </div>
 
                         <div>
@@ -123,7 +123,7 @@ const Services = () => {
                     <div className='fifth-section'>
                         <h3 data-aos="zoom-in" data-aos-delay="50">Sounds good?</h3>
                         <p data-aos="zoom-out-up" data-aos-delay="100">Let's get to work! How can I help?</p>
-                        <Link to='/contact' className='contact-btn' data-aos="zoom-in" data-aos-delay="200">CONTACT</Link>
+                        <Link to='/contact' className='contact-btn' data-aos="zoom-in" data-aos-delay="200"><span>CONTACT</span></Link>
                     </div>
                 </section>
                 

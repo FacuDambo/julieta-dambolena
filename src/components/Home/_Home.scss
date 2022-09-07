@@ -49,7 +49,7 @@ $purple: #AC61DF;
                 }
             }
 
-            span {
+            .eng-spa {
                 color: $purple;
             }
         }
@@ -110,10 +110,9 @@ $purple: #AC61DF;
     }
 
     .second-service {
-        flex-direction: column-reverse;
-
         > div {
             gap: 2.5rem;
+            flex-direction: column-reverse;
         }
 
         aside {
@@ -210,7 +209,7 @@ $purple: #AC61DF;
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-        height: 26rem;
+        height: 35rem;
         justify-content: center;
         background: $light-blue;
         color: #fff;
@@ -236,20 +235,94 @@ $purple: #AC61DF;
         a {
             margin-top: 1rem;
             text-decoration: none;
-            background: $purple;
+            background: #753d9b;
             color: #fff;
             padding: 0.5rem 1.7rem 0.3rem;
             border-radius: 5px;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+
+            span {
+                position: relative;
+                z-index: 10;
+                transition: color 0.3s;
+            }
+
+            &:hover {
+                span {
+                    color: #fff;
+                }
+            }
+
+            &::before, &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+
+            &::before {
+                content: "";
+                background: $purple;
+                width: 120%;
+                left: -10%;
+                transform: skew(30deg);
+                transition: transform 0.3s cubic-bezier(0.3, 1, 0.8, 1);
+            }
+
+            &:hover::before {
+                transform: translate3d(100%, 0, 0);
+            }
         }
     }
 
     .contact-btn {
         text-decoration: none;
-        background: $purple;
+        background: #753d9b;
         color: #fff;
         padding: 0.3rem 0.7rem 0.2rem;
         border-radius: 5px;
         align-self: center;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+
+            span {
+                position: relative;
+                z-index: 10;
+                transition: color 0.3s;
+            }
+
+            &:hover {
+                span {
+                    color: #fff;
+                }
+            }
+
+            &::before, &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+
+            &::before {
+                content: "";
+                background: $purple;
+                width: 120%;
+                left: -10%;
+                transform: skew(30deg);
+                transition: transform 0.3s cubic-bezier(0.3, 1, 0.8, 1);
+            }
+
+            &:hover::before {
+                transform: translate3d(100%, 0, 0);
+            }
     }
 }
 
@@ -257,7 +330,7 @@ $purple: #AC61DF;
 @media only screen and (max-width: 320px) {
     .main-container { 
         .fourth-section-carousel {
-            height: 32rem;
+            height: 35rem;
         }
     }
 }
@@ -286,7 +359,7 @@ $purple: #AC61DF;
         }
 
         .fourth-section-carousel {
-            height: 20rem;
+            height: 26rem;
 
             h3 {
                 width: 60%;
