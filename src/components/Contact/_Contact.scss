@@ -21,6 +21,34 @@ $purple: #AC61DF;
     margin-top: 1rem;
 }
 
+.first-section {
+    > .msg-sent {
+        gap: unset !important;
+        
+        span {
+            font-size: 8rem;
+            color: $light-green;
+            animation: rotation 0.4s;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            color: $dark-blue;
+            font-weight: 600;
+        }
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .inputbox {
     position: relative;
     width: 100%;
@@ -48,6 +76,11 @@ $purple: #AC61DF;
             color: $dark-blue;
             font-weight: 600;
         }
+    }
+
+    textarea {
+        overflow: auto;
+        resize: none;
     }
 
     span {

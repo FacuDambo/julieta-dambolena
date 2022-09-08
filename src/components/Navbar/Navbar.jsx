@@ -21,7 +21,7 @@ export const Navbar = () => {
     }
 
     const scrollPosition = useScrollPosition()
-    const windoWidth = window.innerWidth;
+    const windowWidth = window.innerWidth;
 
     return (
         <nav className={scrollPosition > 10 ? 'navbar-scrolled' : 'navbar-not-scrolled'}>
@@ -30,7 +30,7 @@ export const Navbar = () => {
             <button ref={navBtn} className="material-symbols-outlined navbar-expand" 
             onClick={() => {toggleNav()}}>menu</button>
 
-            <div ref={nav} className={isNavExpanded && windoWidth < 1024 ? 'navigation-menu expanded' : 'navigation-menu'}>
+            <div ref={nav} className={isNavExpanded && windowWidth < 1024 ? 'navigation-menu expanded' : 'navigation-menu'}>
                 <NavLink to="/" onClick={() => {toggleNav()}}>HOME</NavLink>
                 <NavLink to="/about-me" onClick={() => {toggleNav()}}>ABOUT ME</NavLink>
                 <NavLink to="/portfolio" onClick={() => {toggleNav()}}>PORTFOLIO</NavLink>

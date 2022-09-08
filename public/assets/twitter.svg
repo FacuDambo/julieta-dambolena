@@ -1,99 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
-   width="80mm"
-   height="80mm"
-   viewBox="0 0 283.46462 283.46459"
-   id="svg2"
+   fill="#000000"
+   viewBox="0 0 80 80"
+   width="80"
+   height="80"
    version="1.1"
-   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   id="svg4"
    sodipodi:docname="twitter.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <title
-     id="title4225">Twitter logo</title>
+   xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs4" />
+     id="defs8">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient887">
+      <stop
+         style="stop-color:#3ee2b5;stop-opacity:1;"
+         offset="0"
+         id="stop883" />
+      <stop
+         style="stop-color:#ac61df;stop-opacity:1"
+         offset="1"
+         id="stop885" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient887"
+       id="linearGradient889"
+       x1="1"
+       y1="40"
+       x2="79"
+       y2="40"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
   <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="184.90842"
-     inkscape:cy="185.96908"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     id="namedview6"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
      showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
+     width="80px"
+     inkscape:zoom="5.8760574"
+     inkscape:cx="32.930244"
+     inkscape:cy="26.037867"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:pagecheckerboard="0"
-     height="27.45634mm" />
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>Twitter logo</dc:title>
-        <cc:license
-           rdf:resource="http://artlibre.org/licence/lal" />
-        <dc:source>http://www.dafont.com/forum/attach/orig/7/1/71172.png</dc:source>
-        <dc:date>18/11/2016</dc:date>
-        <dc:creator>
-          <cc:Agent>
-            <dc:title>Twitter, Inc.</dc:title>
-          </cc:Agent>
-        </dc:creator>
-        <dc:publisher>
-          <cc:Agent>
-            <dc:title>CMetalCore</dc:title>
-          </cc:Agent>
-        </dc:publisher>
-      </cc:Work>
-      <cc:License
-         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Notice" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Attribution" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
-      </cc:License>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Capa 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-50.461389,-83.56061)">
-    <path
-       fill="#1d9bf0"
-       d="m 300.82923,160.0382 c 0.16112,2.85623 0.16112,5.7124 0.16112,8.59509 0,87.83277 -54.33265,189.13063 -153.68219,189.13063 v -0.0551 c -29.34817,0.0551 -58.086703,-10.29293 -82.793092,-29.79955 4.267487,0.63166 8.556317,0.94754 12.855873,0.96078 24.321349,0.0281 47.947489,-10.01669 67.081559,-28.50986 -23.11277,-0.53993 -43.38055,-19.08552 -50.460905,-46.16058 8.096425,1.92171 16.438825,1.52685 24.385515,-1.14514 -25.1984,-6.26531 -43.327093,-33.51142 -43.327093,-65.15389 v -0.84239 c 7.508158,5.14653 15.914743,8.00273 24.513842,8.31862 -23.733094,-19.51985 -31.048745,-58.37528 -16.716911,-88.75402 27.423012,41.52734 67.883712,66.77277 111.317722,69.44475 -4.35303,-23.08681 1.59361,-47.27934 15.62599,-63.50862 21.75443,-25.166491 55.96903,-23.876611 76.41858,2.88264 12.09656,-2.93525 23.69032,-8.39766 34.30015,-16.137113 -4.03212,15.386883 -12.47082,28.457043 -23.74378,36.762593 10.70613,-1.5532 21.1663,-5.08067 31.01667,-10.4641 -7.25151,13.37295 -16.3854,25.02164 -26.95239,34.43292 z"
-       id="path10"
-       style="fill:#000000;fill-opacity:1;stroke-width:1.18649" />
-  </g>
+     inkscape:current-layer="svg4" />
+  <path
+     d="M 39.999999,1 C 18.494043,1 1,18.494043 1,40 1,61.505957 18.494043,79 39.999999,79 61.505957,79 79,61.505957 79,40 79,18.494043 61.505957,1 39.999999,1 Z m 19.054044,31.41026 c 0.01695,0.400175 0.02713,0.807131 0.02713,1.215784 0,12.408782 -9.44987,26.721782 -26.72687,26.721782 -5.304,0 -10.243435,-1.554913 -14.397782,-4.220478 0.734218,0.08817 1.478609,0.130565 2.239956,0.130565 4.401914,0 8.452826,-1.498957 11.664392,-4.018696 -4.110261,-0.07461 -7.576175,-2.79613 -8.775001,-6.523173 0.574827,0.110217 1.163218,0.169565 1.770261,0.169565 0.856305,0 1.687174,-0.113609 2.472261,-0.330653 -4.293391,-0.866477 -7.530391,-4.657956 -7.530391,-9.210782 0,-0.04069 0,-0.0797 0,-0.118696 1.266653,0.703696 2.713044,1.127609 4.254391,1.176782 -2.52313,-1.687173 -4.178086,-4.559607 -4.178086,-7.818651 0,-1.721087 0.461217,-3.333652 1.270043,-4.724087 4.634217,5.68213 11.555869,9.421043 19.360956,9.814435 -0.161086,-0.688435 -0.24587,-1.404 -0.24587,-2.139914 0,-5.186999 4.205218,-9.392217 9.393914,-9.392217 2.701174,0 5.141217,1.139478 6.853826,2.965695 2.138217,-0.420521 4.150956,-1.202216 5.965304,-2.27726 -0.700305,2.190783 -2.190783,4.032261 -4.132305,5.195479 1.902522,-0.230609 3.710088,-0.732523 5.397262,-1.480305 -1.258174,1.88387 -2.850391,3.540521 -4.683391,4.864825 z"
+     id="path2"
+     style="stroke-width:1.69565;fill:url(#linearGradient889);fill-opacity:1" />
 </svg>

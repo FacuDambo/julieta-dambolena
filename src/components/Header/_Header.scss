@@ -31,6 +31,7 @@ header {
     h1 {
         color: #fff;
         font-weight: 500;
+        text-align: center;
 
         span.dot::after {
             content: '.';
@@ -170,6 +171,7 @@ header {
 
         h1 {
             font-size: 3.8rem;
+            text-align: start;
         }
 
         .title-parag-btn {

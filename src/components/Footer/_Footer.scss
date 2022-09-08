@@ -35,11 +35,11 @@ footer {
         gap: 1rem;
 
         img {
-            width: 70%;
+            width: 12rem;
         }
 
         p {
-            width: 80%;
+            width: 14rem;
             text-align: center;
         }
     }
@@ -70,15 +70,17 @@ footer {
 
                 li {
                     list-style: none;
+                    display: flex;
+                    align-items: center;
 
                     a {
+                        display: flex;
+                        align-items: center;
                         img {
                             width: 2rem;
-                            filter: invert(1);
-                            transition: 0.4s linear;
 
                             &:hover {
-                                filter: invert(68%) sepia(4%) saturate(5420%) hue-rotate(191deg) brightness(89%) contrast(78%);
+                                filter: hue-rotate(300deg);
                             }
                         }
                     }
@@ -89,31 +91,6 @@ footer {
 }
 
 /* =============== MEDIA QUERYS =============== */
-@media only screen and (min-width: 425px) {
-    footer {
-        .logo-parag {
-            img {
-                width: 50%;
-            }
-        }
-    } 
-}
-
-
-@media only screen and (min-width: 600px) {
-    footer {
-        .logo-parag {
-            img {
-                width: 40%;
-            }
-
-            p {
-                width: 60%;
-            }
-        }
-    }
-}
-
 
 @media only screen and (min-width: 768px) {
     footer {
@@ -124,13 +101,8 @@ footer {
             width: 50%;
             align-items: flex-start;
 
-            img {
-                width: 70%;
-            }
-
             p {
                 text-align: unset;
-                width: 80%;
             }
         }
     }
@@ -142,19 +114,9 @@ footer {
         height: 300px;
 
         .logo-parag {
-            img {
-                width: 50%;
-            }
-        }
-    }
-}
-
-
-@media only screen and (min-width: 1366px) {
-    footer {
-        .logo-parag {
-            img {
-                width: 40%;
+            p {
+                text-align: unset;
+                width: 16rem;
             }
         }
     }
@@ -163,12 +125,9 @@ footer {
 @media only screen and (min-width: 1920px) {
     footer {
         .logo-parag {
-            img {
-                width: 25%;
-            }
-
             p {
-                width: 50%;
+                text-align: unset;
+                width: 20rem;
             }
         }
     }
