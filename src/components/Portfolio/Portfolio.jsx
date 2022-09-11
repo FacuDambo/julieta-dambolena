@@ -54,34 +54,40 @@ const Portfolio = () => {
                             </div>
                             <div className='port-text-container'>
                                 <h3>NFT Marketing: 3 Strategies to Ramp Up Your Project</h3>
-                                <p>NFT marketing is hard. You need to jump through hoops before actually converting your audience into loyal followers —or, better still, customers. The truth is that NFT marketing is simply a different breed. It's not like anything marketers have faced before, and their strategies need to adapt to meet new and complex demands.</p>
-                                <i>September 8th 2022</i>
+                                <p>NFT marketing is hard. You need to jump through hoops before actually converting your audience into loyal followers —or, better still, customers.The truth is that NFT marketing is simply a different breed. It's not like anything marketers have faced before, and their strategies need to adapt to meet new and complex demands.</p>
+                                <i>September 10th 2022</i>
                             </div>
                         </article>
 
                         <article className='portfolio-card' onClick={() => setChanging(2)}>
                             <div className='img-container'>
-                                <img src="assets/nft.jpg" alt="" />
+                                <img src="assets/music.jpg" alt="" />
                             </div>
                             <div className='port-text-container'>
-                                <h3>NFT Marketing: 3 Strategies to Ramp Up Your Project</h3>
-                                <p>NFT marketing is hard. You need to jump through hoops before actually converting your audience into loyal followers —or, better still, customers. The truth is that NFT marketing is simply a different breed. It's not like anything marketers have faced before, and their strategies need to adapt to meet new and complex demands.</p>
-                                <i>September 8th 2022</i>
+                                <h3>Will NFTs Bring the Next Big Revolution to the Music Industry?</h3>
+                                <p>The music industry has gone through a hundred revolutions and then some. Singers, musicians, producers, and other major players in the sector are constantly exploring new ways to monetize their work while providing value for avid music fans.</p>
+                                <i>September 9th 2022</i>
                             </div>
                         </article>
 
                         <article className='portfolio-card' onClick={() => setChanging(3)}>
                             <div className='img-container'>
-                                <img src="assets/nft.jpg" alt="" />
+                                <img src="assets/web3.jpg" alt="" />
                             </div>
                             <div className='port-text-container'>
-                                <h3>NFT Marketing: 3 Strategies to Ramp Up Your Project</h3>
-                                <p>NFT marketing is hard. You need to jump through hoops before actually converting your audience into loyal followers —or, better still, customers. The truth is that NFT marketing is simply a different breed. It's not like anything marketers have faced before, and their strategies need to adapt to meet new and complex demands.</p>
+                                <h3>Web3: A Rebranding Effort for Crypto?</h3>
+                                <p>Web3 is a term you may have heard thrown around a lot lately. And I mean, a lot. Proponents tout it as the future of the internet, as a potential catalyst that will completely transform the way we interact and behave online. Others are a bit more skeptical. They believe Web3 is just a fad, a passing trend that will go away soon. In fact, many deem it a fruitless rebranding effort for cryptocurrency —an attempt to hide all its current flaws under the rug.
+                                </p>
                                 <i>September 8th 2022</i>
                             </div>
                         </article>
                     </div> 
-                    : <PortfolioContent pTitle="NFT Marketing: 3 Strategies to Ramp Up Your Project" pDate="September 8th 2022" pType={changing} setChanging={setChanging}></PortfolioContent>
+                    : <PortfolioContent 
+                        pTitle={changing === 1 ? "NFT Marketing: 3 Strategies to Ramp Up Your Project" : changing === 2 ? "Will NFTs Bring the Next Big Revolution to the Music Industry?" : changing === 3 ? "Web3: A Rebranding Effort for Crypto?" : null} 
+                        pDate={changing === 1 ? "September 10th 2022" : changing === 2 ? "September 9th 2022" : changing === 3 ? "September 8th 2022" : null}
+                        changing={changing} 
+                        setChanging={setChanging}>
+                    </PortfolioContent>
                     }
 
                     <div className='fourth-section-carousel light-green'>

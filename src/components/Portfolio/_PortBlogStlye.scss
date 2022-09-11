@@ -80,6 +80,11 @@
             margin-bottom: 10px;
             font-weight: 600;
         }
+        ul {
+            li {
+                font-weight: 400;
+            }
+        }
     }
 }
 
@@ -121,6 +126,14 @@
 
 @media (min-width: 1300px) {
     .portfolio-opened {
+        .port-header {
+            .ph-title {
+                h3 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
         .port-content {
             max-width: 1000px;
         }

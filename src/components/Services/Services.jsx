@@ -34,7 +34,7 @@ const Services = () => {
         return (
             <main>
                 <Header 
-                title={<h1 className='dot' data-aos="zoom-in-right" data-aos-delay="200">Here's how I can help</h1>}
+                title={<h1 className='dot' data-aos="zoom-in-right" data-aos-delay="200">Let's break through <br /> the noise</h1>}
                 parag={<p data-aos="zoom-in-right" data-aos-delay="300">My services are all meant to make your life easier and help your company expand its reach, drive more traffic, and boost brand awareness --at a regional and international level.</p>} 
                 button="Let's work together"
                 image="assets/image4.png"/>
@@ -46,13 +46,13 @@ const Services = () => {
                                 <h3 data-aos="zoom-in-right" data-aos-delay="200">Translation & Localization</h3>
                                 <span data-aos="zoom-in-right" data-aos-delay="300" className='eng-spa'>ENGLISH - SPANISH</span>
                             </aside>
-                            <p data-aos="zoom-in-right" data-aos-delay="400">Bring global awareness to your brand and expand into new markects with culturally relevant translations.</p>
+                            <p data-aos="zoom-in-right" data-aos-delay="400">Bring global awareness to your brand and expand into new markets with culturally relevant translations.</p>
                             <Link to='/contact' className='contact-btn' data-aos="zoom-in-right" data-aos-delay="500"><span>I want to expand my reach</span></Link>
                         </div>
 
                         <div>
-                            <p data-aos="zoom-in-right" data-aos-delay="600">The lingo in the blockchain & crypto space is unique. Your translated content should reflect that. </p>
-                            <p data-aos="zoom-in-right" data-aos-delay="700">My translation process is designed to produce content that resonates with your community, and all translations are adapted not only to the target audience, but also to its cultural nuances. I follow SEO translation practices and offer international keyword research to make sure your translated content ranks as good as the original version.</p>
+                            <p data-aos="zoom-in-right" data-aos-delay="600">The lingo in the Web3 space is unique. Your translated content should reflect that.  </p>
+                            <p data-aos="zoom-in-right" data-aos-delay="700">My translation process is designed to produce content that resonates with your community, and all translations are adapted not only to the target audience but also to its cultural nuances. I follow SEO translation practices and offer international keyword research to make sure your translated content ranks as well as the original.</p>
                         </div>
                     </div>
 
@@ -60,7 +60,7 @@ const Services = () => {
                         <div>
                             <div>
                                 <p data-aos="zoom-in-right" data-aos-delay="600">Your content represents your brand.</p>
-                                <p data-aos="zoom-in-right" data-aos-delay="700">Whether it's a blog post, social media copy or your project's white paper,  your content should reflect you tone of voice and be 100% tailored to your business. I draft all sorts of content with the target market and audience in mind, following on-page SEO best practices to help you find your way to the first page of Google.</p>
+                                <p data-aos="zoom-in-right" data-aos-delay="700">Whether it's a blog post, social media copy, or your project's white paper,  your content should reflect your tone of voice and be 100% tailored to your business. I draft all sorts of content with the target market and audience in mind, following on-page SEO best practices to help you find your way to the first page of Google.</p>
                             </div>
 
                             <div>
@@ -84,7 +84,7 @@ const Services = () => {
                         </div>
 
                         <div>
-                            <p data-aos="zoom-in-right" data-aos-delay="500">Don't let your busy schedule get in the way of your brand's content strategy.</p>
+                            <p data-aos="zoom-in-right" data-aos-delay="500" className='ps'>Don't let your busy schedule get in the way of your content strategy.</p>
                             <p data-aos="zoom-in-right" data-aos-delay="600">In this fast-paced digital world, it's hard for entrepreneurs, creators and marketing teams to stay on top of things and deliver good content constantly. I can help you plan your content monthly and align it across all channels, so that you don't need to worry about coming up with topics and ideas to share.</p>
                         </div>
                     </div>

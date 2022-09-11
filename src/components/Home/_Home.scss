@@ -51,6 +51,7 @@ $purple: #AC61DF;
 
             .eng-spa {
                 color: $purple;
+                font-weight: 500;
             }
         }
 
@@ -644,6 +645,16 @@ $purple: #AC61DF;
             div {
                 .expertise {
                     width: 20%;
+                }
+            }
+        }
+
+        .third-service {
+            div {
+                flex-direction: column;
+                .ps {
+                    width: 70%;
+                    align-self: flex-end;
                 }
             }
         }

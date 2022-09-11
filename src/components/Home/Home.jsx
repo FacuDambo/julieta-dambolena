@@ -37,7 +37,7 @@ const Home = () => {
             <main>
                 <Header 
                 title={<TypeEffect />}
-                parag={<p data-aos="zoom-in-right">I write and translate content for next-gen companies that are harnessing the power of <span>blockchain</span> and other emerging technologies.</p>} 
+                parag={<p data-aos="zoom-in-right">I write and translate content for Web3 companies that want to break through the noise.</p>} 
                 button="Let's work together"
                 image="assets/image5.png"/>
     
@@ -45,7 +45,7 @@ const Home = () => {
                     <div className='first-section'>
                         <div>
                             <h3 data-aos="fade-down" data-aos-delay="100">Your one-stop freelancer for all your Web3 content needs</h3>
-                            <span data-aos="fade-up" data-aos-delay="200">IN ENGLISH AND SPANISH</span>
+                            <span data-aos="fade-up" data-aos-delay="200" className='eng-spa'>IN ENGLISH AND SPANISH</span>
                         </div>
                         <p data-aos="fade-up" data-aos-delay="300">I work with <span>Web3 companies</span> that are harnessing the power of blockchain, crypto, NFTs, the metaverse and other <span>emerging technologies</span> to bring innovative ideas to life. With domain-specific knowledge and a passion for tech and all things digital, I write and translate everything from blog posts and social media copy to white papers and roadmaps.</p>
                     </div>

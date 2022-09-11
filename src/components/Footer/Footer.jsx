@@ -5,7 +5,7 @@ const Footer = () => {
         <footer>
             <div className='logo-parag'>
                 <img src="assets/white-logo.png" alt="logo" />
-                <p>I'm a translator and content writer helping next-gen companies share their vision and ideas in the blockchain, crypto, NFT, and Web3 space.</p>
+                <p>I'm a translator and content writer helping Web3 companies share their vision and ideas in the new digital ecosystem.</p>
             </div>
 
             <div className='socials'>

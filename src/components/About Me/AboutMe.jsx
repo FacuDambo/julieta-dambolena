@@ -35,7 +35,7 @@ const AboutMe = () => {
                     <div className='first-section'>
                         <div>
                             <h3 data-aos="fade-down" data-aos-delay="100">Here's a little bit about me</h3>
-                            <span data-aos="fade-down" data-aos-delay="200">SPOILER ALERT: ORIGIN STORY INCOMING</span>
+                            <span data-aos="fade-down" data-aos-delay="200" className='eng-spa'>SPOILER ALERT: ORIGIN STORY INCOMING</span>
                         </div>
                         <p data-aos="fade-up" data-aos-delay="300">I graduated as an English-Spanish translator from the Universty of Buenos Aires and I've always been a bit of a word nerd --we're talking kept-a-childhood-poem-notebook and gets-angry-at-a-misplaced-comma kind of word nerd.</p>
                         <p data-aos="fade-up" data-aos-delay="400">But becoming a Web3 writer and translator wasn't always the plan. I first wanted to specialize in the legal field. I know, right? I actually have a law degree that is mocking me as we speak. But here's the good thing: my legal training gave me awesome argumentative tools. Now I can make a case --that is, sell-- pretty much anything.</p>
