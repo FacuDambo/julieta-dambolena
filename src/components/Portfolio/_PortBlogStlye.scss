@@ -1,0 +1,128 @@
+.portfolio-opened {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .port-header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 0 0 200px 60px #000000de;
+
+        .ph-title {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            color: #ececec;
+
+            h3 {
+                text-transform: uppercase;
+            }
+
+            i {
+                color: #d6d6d6;
+            }
+        }
+    }
+
+    .port-content {
+        width: 90%;
+        margin: 50px 0;
+        display: flex;
+        flex-direction: column;
+        color: #3a3a3a;
+
+        span {
+            display: flex;
+            align-items: baseline;
+            margin-top: 15px;
+            cursor: pointer;
+            width: fit-content;
+
+            i {
+                margin-left: 5px;
+                text-decoration: underline;
+            }
+
+            .back-arrow {
+                font-size: 0.8rem;
+                text-decoration: none;
+                transition: 0.4s;
+            }
+
+            &:hover {
+                .back-arrow {
+                    transform: translateX(-2.5px);
+                }
+            }
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 25px;
+            text-align: justify;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
+
+        li {
+            margin-left: 40px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (min-width: 400px) {
+    .portfolio-opened {
+        .port-content {
+            max-width: 320px;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .portfolio-opened {
+        .port-content {
+            max-width: 420px;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .portfolio-opened {
+        .port-content {
+            max-width: 600px;
+            
+            p {
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .portfolio-opened {
+        .port-content {
+            max-width: 800px;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .portfolio-opened {
+        .port-content {
+            max-width: 1000px;
+        }
+    }
+}

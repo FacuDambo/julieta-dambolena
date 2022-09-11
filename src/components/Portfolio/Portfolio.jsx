@@ -6,9 +6,11 @@ import Loader from '../Loader/Loader'
 import Slider from "react-slick";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import PortfolioContent from './PortfolioContent'
 
 const Portfolio = () => {
     const [loading, setLoading] = useState(true)
+    const [changing, setChanging] = useState(0)
 
     useEffect(() => {
         AOS.init();
@@ -16,8 +18,11 @@ const Portfolio = () => {
         setTimeout(() => {
             setLoading(false)
         }, 1200);
-    }, [])
 
+    }, [])
+    
+    console.log(changing);
+    
     var settings = {
         dots: true,
         infinite: true,
@@ -40,9 +45,44 @@ const Portfolio = () => {
                 image="assets/image1.png"/>
 
                 <section className='main-container'>
-                    <div className='first-section'>
-                        
-                    </div>
+                    {
+                    changing === 0 ? 
+                    <div className='first-section portfolio'>
+                        <article className='portfolio-card' onClick={() => setChanging(1)}>
+                            <div className='img-container'>
+                                <img src="assets/nft.jpg" alt="" />
+                            </div>
+                            <div className='port-text-container'>
+                                <h3>NFT Marketing: 3 Strategies to Ramp Up Your Project</h3>
+                                <p>NFT marketing is hard. You need to jump through hoops before actually converting your audience into loyal followers —or, better still, customers. The truth is that NFT marketing is simply a different breed. It's not like anything marketers have faced before, and their strategies need to adapt to meet new and complex demands.</p>
+                                <i>September 8th 2022</i>
+                            </div>
+                        </article>
+
+                        <article className='portfolio-card' onClick={() => setChanging(2)}>
+                            <div className='img-container'>
+                                <img src="assets/nft.jpg" alt="" />
+                            </div>
+                            <div className='port-text-container'>
+                                <h3>NFT Marketing: 3 Strategies to Ramp Up Your Project</h3>
+                                <p>NFT marketing is hard. You need to jump through hoops before actually converting your audience into loyal followers —or, better still, customers. The truth is that NFT marketing is simply a different breed. It's not like anything marketers have faced before, and their strategies need to adapt to meet new and complex demands.</p>
+                                <i>September 8th 2022</i>
+                            </div>
+                        </article>
+
+                        <article className='portfolio-card' onClick={() => setChanging(3)}>
+                            <div className='img-container'>
+                                <img src="assets/nft.jpg" alt="" />
+                            </div>
+                            <div className='port-text-container'>
+                                <h3>NFT Marketing: 3 Strategies to Ramp Up Your Project</h3>
+                                <p>NFT marketing is hard. You need to jump through hoops before actually converting your audience into loyal followers —or, better still, customers. The truth is that NFT marketing is simply a different breed. It's not like anything marketers have faced before, and their strategies need to adapt to meet new and complex demands.</p>
+                                <i>September 8th 2022</i>
+                            </div>
+                        </article>
+                    </div> 
+                    : <PortfolioContent pTitle="NFT Marketing: 3 Strategies to Ramp Up Your Project" pDate="September 8th 2022" pType={changing} setChanging={setChanging}></PortfolioContent>
+                    }
 
                     <div className='fourth-section-carousel light-green'>
                         <h3 data-aos="fade-down" data-aos-delay="100">And this is what my clients are saying...</h3>
